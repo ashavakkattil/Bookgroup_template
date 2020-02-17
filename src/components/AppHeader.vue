@@ -164,7 +164,7 @@ export default {
 }
 .logo-container {
   padding: 43px 0px;
-  width: 300px;
+  width: 280px;
   margin: auto;
 }
 .menu-container {
