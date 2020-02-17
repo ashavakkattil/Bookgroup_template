@@ -32,6 +32,104 @@
     <div class="logo-container">
       <v-img src="../assets/logo.png" />
     </div>
+    <div class="menu-container" id="menu-container">
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text  class="menu-btn" >Home</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text class="menu-btn">About Us</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text class="menu-btn">Services</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text class="menu-btn">Pricing</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text class="menu-btn">Blog</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu
+        open-on-hover
+        bottom
+        offset-y
+        content-class="app-menu"
+        transition="slide-y-transition"
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" text class="menu-btn">Contact Us</v-btn>
+        </template>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>header settings</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </div>
   </div>
 </template>
 <script>
@@ -45,6 +143,8 @@ export default {
 };
 </script>
 <style >
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .top-panel {
   margin: 0 auto;
   max-width: 1730px;
@@ -63,8 +163,36 @@ export default {
   padding: 0px;
 }
 .logo-container {
-  padding: 54px 6rem 11px;
-  width: 480px;
+  padding: 43px 0px;
+  width: 300px;
   margin: auto;
+}
+.menu-container {
+  max-width: 900px;
+  margin: 0px auto;
+  text-align: center;
+  
+  
+}
+.app-menu {
+  top: 270px !important;
+}
+.menu-btn{
+   
+    padding: 0px 40px !important;
+    text-transform: capitalize !important;
+    font-family: Josefin Sans, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: .04em !important;
+}
+.menu-btn:hover {
+   
+    border-top: 3px solid #9577c2;
+    border-radius: 0px;
+    background: white;
+    background-color: white;
+    transition: .25s;
+
 }
 </style>
