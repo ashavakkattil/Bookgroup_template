@@ -23,6 +23,8 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 #app {
   font-style: normal;
   font-weight: 400;
