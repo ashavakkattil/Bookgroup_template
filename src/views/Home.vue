@@ -17,6 +17,15 @@
           <BookGrid />
         </div>
       </v-container>
+      <div class="subscribeMailContainer">
+        <p class="subscribeheading">Tips for Aspiring Authors</p>
+        <p class="mt-10">
+          Subscribe to our newsletter and receive the latest tips and tricks, shared by some
+          world-famous authors on our blog!
+        </p>
+        <div class="py-10"><SubscribeModule /></div>
+        
+      </div>
     </div>
   </div>
 </template>
@@ -24,9 +33,11 @@
 <script>
 import Slider from "../components/Slider";
 import BookGrid from "../components/BookGrid";
+import SubscribeModule from "../components/SubscribeMail";
+
 export default {
   name: "Home",
-  components: { Slider, BookGrid }
+  components: { Slider, BookGrid, SubscribeModule }
 };
 </script>
 
@@ -64,4 +75,21 @@ export default {
 .bookGridContainer {
   padding-bottom: 63px;
 }
+.subscribeMailContainer {
+  background-image: url(https://ld-wp.template-help.com/wordpress_60118/wp-content/uploads/2016/05/pic010.jpg);
+  padding-top: 102px;
+  padding-bottom: 113px;
+}
+.subscribeMailContainer p {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  width: 35%;
+  margin: auto;
+}
+.subscribeMailContainer .subscribeheading {
+  font-size: 35px;
+  font-family: "Josefin Sans";
+}
+
 </style>

@@ -11,7 +11,7 @@
         <p class="mb-0">{{image.text}}</p>
         <p class="subText" v-if="image.subtext != '' ">{{image.subtext}}</p>
         <p v-else class="mb-5"></p>
-        <v-btn color="#9577c2" class="carousel-btn" x-large>{{image.btn_text}}</v-btn>
+        <v-btn color="#9577c2" class="app-btn" x-large>{{image.btn_text}}</v-btn>
       </div>
     </v-carousel-item>
   </v-carousel>
@@ -65,11 +65,5 @@ export default {
   letter-spacing: 0.04em;
   line-height: 1.31;
 }
-.carousel-btn {
-  margin: 23px 0px 0px;
-  padding: 16px 66px !important;
-  border-radius: 0px;
-  font-weight: 700;
-  font-size: 13px;
-}
+
 </style>

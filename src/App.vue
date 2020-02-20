@@ -21,8 +21,8 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=Lato');
+<style>
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 
 #app {
@@ -34,7 +34,12 @@ export default {
   letter-spacing: 0.04em;
   text-align: left;
   color: #323232;
-  
 }
-
+.app-btn {
+  margin: 23px 0px 0px;
+  padding: 16px 66px !important;
+  font-weight: 700;
+  font-size: 13px;
+  background-color: #9577c2 !important;
+}
 </style>
