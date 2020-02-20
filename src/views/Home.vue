@@ -1,18 +1,20 @@
 <template>
   <div class="home mt-8">
     <Slider />
-    <v-container>
-      <div class="info_container">
-        <v-img src="../assets/info_icon.png"></v-img>
-        <div class="info_message">
-          <h5>Do you feel like the next Charles Dickens or Erik Larson?</h5>
-          <p>
-            Regardless of your writing being a fiction or a documentary work, we have a lot to offer,
-            so you can bring your manuscript to the public eye!
-          </p>
+    <div class="home-subsection">
+      <v-container>
+        <div class="info_container">
+          <v-img src="../assets/info_icon.png"></v-img>
+          <div class="info_message">
+            <h5>Do you feel like the next Charles Dickens or Erik Larson?</h5>
+            <p>
+              Regardless of your writing being a fiction or a documentary work, we have a lot to offer,
+              so you can bring your manuscript to the public eye!
+            </p>
+          </div>
         </div>
-      </div>
-    </v-container>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -25,6 +27,9 @@ export default {
 </script>
 
 <style scoped>
+.home-subsection {
+  background-color: #ebebeb;
+}
 .info_container {
   text-align: center;
   padding-top: 66px;
@@ -45,7 +50,7 @@ export default {
   font-weight: 600;
   margin-bottom: 15px;
 }
-.info_message p{
+.info_message p {
   font-family: Lato, sans-serif;
   font-size: 17px;
   font-weight: 300;
