@@ -13,6 +13,9 @@
             </p>
           </div>
         </div>
+        <div class="bookGridContainer">
+          <BookGrid />
+        </div>
       </v-container>
     </div>
   </div>
@@ -20,9 +23,10 @@
 
 <script>
 import Slider from "../components/Slider";
+import BookGrid from "../components/BookGrid";
 export default {
   name: "Home",
-  components: { Slider }
+  components: { Slider, BookGrid }
 };
 </script>
 
@@ -56,5 +60,8 @@ export default {
   font-weight: 300;
   width: 40%;
   margin: 0 auto;
+}
+.bookGridContainer {
+  padding-bottom: 63px;
 }
 </style>
