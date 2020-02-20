@@ -143,7 +143,7 @@ export default {
 };
 </script>
 <style >
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 
 .top-panel {
   margin: 0 auto;

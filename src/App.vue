@@ -34,5 +34,7 @@ export default {
   letter-spacing: 0.04em;
   text-align: left;
   color: #323232;
+  
 }
+
 </style>
